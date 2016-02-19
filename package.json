@@ -1,7 +1,7 @@
 {
   "name": "arrford",
-  "version": "0.0.1",
-  "description": "Array to oxford comma'd string",
+  "version": "0.0.2",
+  "description": "Array to human readable list converter",
   "license": "WTFPL",
   "homepage": "https://github.com/dawsonbotsford/arrford#readme",
   "repository": {
@@ -33,7 +33,10 @@
     "commas",
     "Oxford",
     "english",
-    "list",
+    "humanize",
+    "read",
+    "readable",
+    "list converter",
     "writing",
     "documented",
     "tested",

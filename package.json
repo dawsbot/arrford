@@ -1,7 +1,7 @@
 {
   "name": "arrford",
   "version": "0.0.0",
-  "description": "Array to oxford comma'd list",
+  "description": "Array to oxford comma'd string",
   "license": "WTFPL",
   "homepage": "https://github.com/dawsonbotsford/arrford#readme",
   "repository": {

@@ -3,7 +3,7 @@
 [![NPM downloads](http://img.shields.io/npm/dm/arrford.svg?style=flat)](http://npmjs.org/arrford)
 [![npm](https://img.shields.io/npm/v/arrford.svg)](https://www.npmjs.com/package/arrford)
 
-> Array to Oxford comma'd list
+> Array to Oxford comma'd string
 
 <br>
 
@@ -47,11 +47,12 @@ Type: `Array` of strings
 
 ##### oxford
 
-Type: `boolean`
-Default: true
+Type: `boolean`  
+Default: true  
 Description: whether to use the Oxford comma or not
 
-Take an array of strings and return a parsed english list. Insert "," and "and" in a grammatically correct way. Follow the Oxford comma trend unless no-Oxford is called.
+Take an array of strings and return a parsed english list. Insert "," and "and" in a grammatically correct way. Follow the Oxford comma trend unless no-Oxford is called.  
+Returns: `string`
 
 <br>
 

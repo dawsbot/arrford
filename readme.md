@@ -3,7 +3,7 @@
 [![NPM downloads](http://img.shields.io/npm/dm/arrford.svg?style=flat)](http://npmjs.org/arrford)
 [![npm](https://img.shields.io/npm/v/arrford.svg)](https://www.npmjs.com/package/arrford)
 
-> Array to Oxford comma'd string
+> Array to human readable list converter
 
 <br>
 
@@ -28,7 +28,7 @@ arrford(['run', 'climb', 'jump!'], false);
 //=> 'run, climb and jump!'
 
 arrford(['run', 'climb!']);
-//=> 'run and jump'
+//=> 'run and climb!'
 
 arrford(['run!']);
 //=> 'run!'
@@ -51,7 +51,7 @@ Type: `boolean`
 Default: true  
 Description: whether to use the Oxford comma or not
 
-Take an array of strings and return a parsed english list. Insert "," and "and" in a grammatically correct way. Follow the Oxford comma trend unless `false` is passed in for the second argument.
+Take an array of strings and return a string  of these items as an english list. Insert "," and "and" in a grammatically correct way. Follow the Oxford comma trend unless `false` is passed in for the second argument.
 Returns: `string`
 
 <br>

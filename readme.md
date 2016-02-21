@@ -1,4 +1,4 @@
-# arrford
+arrford
 [![npm version](https://img.shields.io/npm/v/arrford.svg)](https://www.npmjs.com/package/arrford)
 [![Build Status](https://travis-ci.org/dawsonbotsford/arrford.svg?branch=master)](https://travis-ci.org/dawsonbotsford/arrford)
 [![NPM downloads](http://img.shields.io/npm/dm/arrford.svg?style=flat)](http://npmjs.org/arrford)
@@ -47,6 +47,7 @@ Type: `Array` of strings
 
 ##### oxford
 
+*optional*  
 Type: `boolean`  
 Default: true  
 Description: whether to use the Oxford comma or not

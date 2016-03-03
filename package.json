@@ -1,8 +1,8 @@
 {
   "name": "arrford",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Array to human readable list converter",
-  "license": "WTFPL",
+  "license": "MIT",
   "homepage": "https://github.com/dawsonbotsford/arrford#readme",
   "repository": {
     "type": "git",

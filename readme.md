@@ -23,15 +23,25 @@ const arrford = require('arrford');
 
 arrford(['run', 'climb', 'jump!']);
 //=> 'run, climb, and jump!'
+```
 
-arrford(['run', 'climb', 'jump!'], false);
-//=> 'run, climb and jump!'
+<br>
 
+#### Fewer than 3 elements in array
+```js
 arrford(['run', 'climb!']);
 //=> 'run and climb!'
 
 arrford(['run!']);
 //=> 'run!'
+```
+
+<br>
+
+#### Abort the Oxford comma
+```js
+arrford(['run', 'climb', 'jump!'], false);
+//=> 'run, climb and jump!'
 ```
 
 

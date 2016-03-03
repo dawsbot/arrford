@@ -59,4 +59,4 @@ Returns: `string`
 
 ## License
 
-[MIT] © [Dawson Botsford](http://dawsonbotsford.com)
+[Do What The F*ck You Want To Public License v2 (WTFPL-2.0)](https://tldrlegal.com/l/wtfpl) © [Dawson Botsford](http://dawsonbotsford.com)

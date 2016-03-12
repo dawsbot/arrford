@@ -8,12 +8,15 @@ test('valid args', t => {
   t.throws(() => {
     fn(['1'], 'err');
   }, TypeError);
+  t.throws(() => {
+    fn(['1'], 'err', false);
+  }, TypeError);
 
   t.throws(() => {
     fn([]);
   }, Error);
   t.throws(() => {
-    fn(['w1', true, 'extra']);
+    fn(['w1', true, 'alt', 'extra']);
   }, Error);
 });
 

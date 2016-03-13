@@ -30,7 +30,7 @@ test('oxford true', t => {
 test('join', t => {
   t.is(fn(['w1'], undefined, 'och'), 'w1');
   t.is(fn(['w1', 'w2'], undefined, 'och'), 'w1 och w2');
-  t.is(fn(['w1', 'w2', 'w3'], undefined, 'och'), 'w1, w2, och w3');
+  t.is(fn(['w1', 'w2', 'w3'], true, 'och'), 'w1, w2, och w3');
   t.is(fn(['w1', 'w2', 'w3', 'w4'], false, 'och'), 'w1, w2, w3 och w4');
 });
 

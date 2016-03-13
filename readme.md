@@ -44,12 +44,18 @@ arrford(['run', 'climb', 'jump!'], false);
 //=> 'run, climb and jump!'
 ```
 
+#### Replace the word 'and'
+```js
+arrford(['spring', 'klättra', 'hoppa!'], true, 'och');
+//=> 'spring, klättra och hoppa!'
+```
+
 
 <br>
 
 ## API
 
-### arrford(target [, oxford])
+### arrford(target [, oxford, join])
 
 ##### target
 
@@ -62,7 +68,14 @@ Type: `boolean`
 Default: true  
 Description: whether to use the Oxford comma or not
 
-Take an array of strings and return a string of these items as an english list. Insert "," and "and" in a grammatically correct way. Follow the Oxford comma trend unless `false` is passed in for the second argument.
+##### join
+
+*optional*  
+Type: `string`  
+Default: 'and'  
+Description: word used to join the list with the last element
+
+Take an array of strings and return a string of these items as an list. Insert "," and "and" in a grammatically correct way. Follow the Oxford comma trend unless `false` is passed in for the second argument. Use the word 'and' to join the list unless some other word is specified for the third argument.
 Returns: `string`
 
 <br>

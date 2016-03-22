@@ -9,10 +9,18 @@
 
 ## Install
 
+#### Node
+
 ```
 npm install --save arrford
 ```
 
+#### Web
+
+afford is exported for web and usable with the variable `arrford`
+```html
+<script src="https://rawgit.com/dawsonbotsford/arrford/master/bundle.js"></script>
+```
 
 <br>
 
@@ -72,20 +80,20 @@ Type: `Array` of `string`s
 
 ##### oxford
 
-*optional*  
-Type: `boolean`  
-Default: true  
+*optional*
+Type: `boolean`
+Default: true
 Description: whether to use the Oxford comma or not
 
 ##### join
 
-*optional*  
-Type: `string`  
-Default: 'and'  
+*optional*
+Type: `string`
+Default: 'and'
 Description: word used to join the list with the last element
 
 #### returns
-Type: `string`  
+Type: `string`
 
 Take an array of strings and return a string of these items as an list. Insert "," and "and" in a grammatically correct way. Follow the Oxford comma trend unless `false` is passed in for the second argument. Use the word 'and' to join the list unless some other word is specified for the third argument.
 

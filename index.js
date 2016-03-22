@@ -1,12 +1,11 @@
 'use strict';
 module.exports = function (input, oxford, join) {
   const argLength = arguments.length;
+
   if (oxford === undefined) {
     oxford = true;
   }
-  if (join === undefined) {
-    join = 'and';
-  }
+  join = join || 'and';
 
   if (!Array.isArray(input)) {
     throw new TypeError(`Expected input to be an array, got ${typeof input}`);

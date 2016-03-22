@@ -17,7 +17,7 @@ npm install --save arrford
 
 #### Web
 
-afford is exported for web and usable with the variable `arrford`
+arrford is exported for web and usable with the variable `arrford`
 ```html
 <script src="https://rawgit.com/dawsonbotsford/arrford/master/bundle.js"></script>
 ```

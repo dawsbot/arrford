@@ -27,6 +27,7 @@ arrford is exported for web and usable with the variable `arrford`
 ## Usage
 
 ```js
+// remove require statement if using the web bundle
 const arrford = require('arrford');
 
 arrford(['run', 'climb', 'jump!']);
@@ -74,28 +75,43 @@ arrford(['spring', 'klättra', 'hoppa!'], false, 'och');
 
 ### arrford(target [, oxford, join])
 
-##### target
+<br>
 
-Type: `Array` of `string`s
+#### target
 
-##### oxford
+**Type**: `Array` of `string`s
 
-*optional*
-Type: `boolean`
-Default: true
-Description: whether to use the Oxford comma or not
+<br>
 
-##### join
+#### oxford
 
 *optional*
-Type: `string`
-Default: 'and'
-Description: word used to join the list with the last element
+
+**Type**: `boolean`
+
+**Default**: true
+
+**Description**: whether to use the Oxford comma or not
+
+<br>
+
+#### join
+
+*optional*
+
+**Type**: `string`
+
+**Default**: 'and'
+
+**Description**: word used to join the list with the last element
+
+<br>
 
 #### returns
-Type: `string`
 
-Take an array of strings and return a string of these items as an list. Insert "," and "and" in a grammatically correct way. Follow the Oxford comma trend unless `false` is passed in for the second argument. Use the word 'and' to join the list unless some other word is specified for the third argument.
+**Type**: `string`
+
+**Description**: Take an array of strings and return a string of these items as a list. Insert "," and "and" in a grammatically correct way. Follow the Oxford comma trend unless `false` is passed in for the second argument. Use the word 'and' to join the list unless some other word is specified for the third argument.
 
 <br>
 

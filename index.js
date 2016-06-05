@@ -2,7 +2,7 @@
 module.exports = function (input, oxford, join) {
   const argLength = arguments.length;
 
-  if (oxford === undefined) {
+  if (typeof oxford === 'undefined') {
     oxford = true;
   }
   join = join || 'and';
@@ -29,21 +29,30 @@ module.exports = function (input, oxford, join) {
   }
 
   const len = input.length;
-  if (len === 0) {
-    throw new Error(`Expected input array length >= 1, got ${input.length}`);
-  } else if (len === 1) {
-    return `${input[0]}`;
-  } else if (len === 2) {
-    return `${input[0]} ${join} ${input[1]}`;
-  } else {
-    let myString = `${input[0]}`;
-    for (let i = 1; i < input.length; i++) {
-      if (i < input.length - 1) {
-        myString += `, ${input[i]}`;
-      } else {
-        myString += oxford === true ? `, ${join} ${input[i]}` : ` ${join} ${input[i]}`;
+  switch (len) {
+    case 0:
+      return input;
+      break;
+    case 1:
+      return `${input[0]}`;
+      break;
+
+    default:
+      let myString = `${input[0]}`;
+      for (let i = 1; i < input.length; i++) {
+        if (i < input.length - 1) {
+          myString += `, ${input[i]}`;
+        } else {
+          myString += oxford === true ? `, ${join} ${input[i]}` : ` ${join} ${input[i]}`;
+        }
       }
-    }
-    return myString;
+      return myString;
+      break;
   }
+  // if (len === 0) {
+  // } else if (len === 1) {
+  // } else if (len === 2) {
+  //   return `${input[0]} ${join} ${input[1]}`;
+  // } else {
+  // }
 };

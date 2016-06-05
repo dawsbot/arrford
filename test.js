@@ -6,15 +6,16 @@ test('valid args', t => {
     fn(false);
   }, TypeError);
   t.throws(() => {
-    fn(['1'], 'err');
+    fn([], 'err');
   }, TypeError);
   t.throws(() => {
     fn(['1'], 'err', false);
   }, TypeError);
 
-  t.throws(() => {
-    fn([]);
-  }, Error);
+  t.notThrows(() => {
+    fn([], false);
+  });
+
   t.throws(() => {
     fn(['w1', true, 'alt', 'extra']);
   }, Error);
@@ -28,8 +29,8 @@ test('oxford true', t => {
 });
 
 test('join', t => {
-  t.is(fn(['w1'], undefined, 'och'), 'w1');
-  t.is(fn(['w1', 'w2'], undefined, 'och'), 'w1 och w2');
+  t.is(fn(['w1'], true, 'och'), 'w1');
+  t.is(fn(['w1', 'w2'], true, 'och'), 'w1 och w2');
   t.is(fn(['w1', 'w2', 'w3'], true, 'och'), 'w1, w2, och w3');
   t.is(fn(['w1', 'w2', 'w3', 'w4'], false, 'och'), 'w1, w2, w3 och w4');
 });

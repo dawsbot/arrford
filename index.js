@@ -5,7 +5,7 @@ module.exports = function (input, oxford, join) {
   if (typeof oxford === 'undefined') {
     oxford = true;
   }
-  join = join || 'and';
+  join = typeof join === 'undefined' ? 'and' : join;
 
   if (!Array.isArray(input)) {
     throw new TypeError(`Expected input to be an array, got ${typeof input}`);
@@ -28,30 +28,27 @@ module.exports = function (input, oxford, join) {
     throw new Error(`Expected 1, 2 or 3 arguments, got ${argLength}`);
   }
 
-  const len = input.length;
-  switch (len) {
+  switch (input.length) {
     case 0: {
       return input;
     }
     case 1: {
-      return `${input[0]}`;
+      return input[0];
+    }
+    case 2: {
+      return `${input[0]} ${join} ${input[1]}`;
     }
     default: {
-      let myString = `${input[0]}`;
+      let returnString = input[0];
       for (let i = 1; i < input.length; i++) {
         if (i < input.length - 1) {
-          myString += `, ${input[i]}`;
+          returnString += `, ${input[i]}`;
         } else {
-          myString += oxford === true ? `, ${join} ${input[i]}` : ` ${join} ${input[i]}`;
+          returnString += oxford ? ',' : '';
+          returnString += ` ${join} ${input[i]}`;
         }
       }
-      return myString;
+      return returnString;
     }
   }
-  // if (len === 0) {
-  // } else if (len === 1) {
-  // } else if (len === 2) {
-  //   return `${input[0]} ${join} ${input[1]}`;
-  // } else {
-  // }
 };

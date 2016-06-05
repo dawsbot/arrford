@@ -111,7 +111,7 @@ arrford(['spring', 'klättra', 'hoppa!'], false, 'och');
 
 **Type**: `string`
 
-**Description**: Take an array of strings and return a string of these items as a list. Insert "," and "and" in a grammatically correct way. Follow the Oxford comma trend unless `false` is passed in for the second argument. Use the word 'and' to join the list unless some other word is specified for the third argument.
+**Description**: Take an array of strings and return a string of these items as a list. Insert "," and "and" in a grammatically correct way. Follow the Oxford comma trend unless `false` is passed in for the second argument. Use the word 'and' to join the list unless some other "join" word is specified for the third argument.
 
 <br>
 

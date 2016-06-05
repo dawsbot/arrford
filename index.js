@@ -30,14 +30,13 @@ module.exports = function (input, oxford, join) {
 
   const len = input.length;
   switch (len) {
-    case 0:
+    case 0: {
       return input;
-      break;
-    case 1:
+    }
+    case 1: {
       return `${input[0]}`;
-      break;
-
-    default:
+    }
+    default: {
       let myString = `${input[0]}`;
       for (let i = 1; i < input.length; i++) {
         if (i < input.length - 1) {
@@ -47,7 +46,7 @@ module.exports = function (input, oxford, join) {
         }
       }
       return myString;
-      break;
+    }
   }
   // if (len === 0) {
   // } else if (len === 1) {

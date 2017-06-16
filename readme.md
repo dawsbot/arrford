@@ -1,6 +1,6 @@
 # arrford
 [![npm version](https://img.shields.io/npm/v/arrford.svg)](https://www.npmjs.com/package/arrford)
-[![Build Status](https://travis-ci.org/dawsonbotsford/arrford.svg?branch=master)](https://travis-ci.org/dawsonbotsford/arrford)
+[![Build Status](https://travis-ci.org/dawsbot/arrford.svg?branch=master)](https://travis-ci.org/dawsbot/arrford)
 [![NPM downloads](http://img.shields.io/npm/dm/arrford.svg?style=flat)](http://npmjs.org/arrford)
 
 > Array to human readable list converter
